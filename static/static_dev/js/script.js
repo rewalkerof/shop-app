@@ -65,10 +65,10 @@ $(document).ready(function () {
         showingBasket();
     })
 
-    // $('.basket-container').mouseout(function () {
-    //     $('.basket-items').addClass('hidden');
-    // })
-    //
+    $('.basket-container').mouseout(function () {
+        $('.basket-items').addClass('hidden');
+    })
+
     $(document).on('click', 'delete_item', function (e) {
         e.preventDefault();
         $(this).closest('li').remove();
